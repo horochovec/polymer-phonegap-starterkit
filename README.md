@@ -60,9 +60,9 @@ cordova plugin add cordova-plugin-crosswalk-webview --save
 
 # Steps to build this project
 
-At index.html, uncomment the script import to cordova.js;
-At index.html, uncomment the link import to vulcanize/vulcanize.html;
-At index.html, comment the link import to imports.html;
+- At index.html, uncomment the script import to cordova.js;
+- At index.html, uncomment the link import to vulcanize/vulcanize.html;
+- At index.html, comment the link import to imports.html;
 
 ```bash
 cd source
@@ -74,9 +74,9 @@ gulp crosswalk
 
 # Steps to work in this project
 
-At index.html, comment the script import to cordova.js;
-At index.html, comment the link import to vulcanize/vulcanize.html;
-At index.html, uncomment the link import to imports.html;
+- At index.html, comment the script import to cordova.js;
+- At index.html, comment the link import to vulcanize/vulcanize.html;
+- At index.html, uncomment the link import to imports.html;
 
 ```bash
 cd source
