@@ -1,0 +1,19 @@
+{
+  "name": "polymer-phonegap-starterkit",
+  "version": "0.0.1",
+  "authors": [
+    "Stefan Horochovec <stefan.horochovec@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/horochovec/polymer-phonegap-starterkit.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer"
+  }
+}
