@@ -1,6 +1,6 @@
 module.exports = function(gulp, $) {
 
-	gulp.task('mobile-copy-android', function () {
+	gulp.task('mobile-copy', function () {
 
         gulp.src($.config.paths.dist + '/*.html')
             .pipe(gulp.dest($.config.paths.mobile + '/www/'));
@@ -22,17 +22,17 @@ module.exports = function(gulp, $) {
 
 	});
 
-	gulp.task('mobile-clean-resources-android', function() {
+	gulp.task('mobile-clean-resources', function() {
 		return $.del($.config.paths.mobile + '/resources/*', {force: true});
 	});
 
-	gulp.task('mobile-clean-www-android', function () {
+	gulp.task('mobile-clean-www', function () {
         console.log($.config.paths.mobile);
 		return $.del($.config.paths.mobile + '/www/*', {force: true});
 	});
 
 	gulp.task('mobile', function( done ) {
-		$.runSequence('mobile-clean-resources-android', 'mobile-clean-www-android', 'mobile-copy-android', done);
+		$.runSequence('mobile-clean-resources', 'mobile-clean-www', 'mobile-copy-android', done);
 	});
 
 };
